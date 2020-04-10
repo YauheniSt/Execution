@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="26993" started-at="2020-04-10T19:25:22Z" finished-at="2020-04-10T19:25:49Z">
+    <groups>
+      <group name="Regression">
+        <method signature="HomePageTest.loginTC()[pri:0, instance:Test.HomePageTest@48140564]" name="loginTC" class="Test.HomePageTest"/>
+        <method signature="LoginTest.loginTC()[pri:0, instance:Test.LoginTest@2c8d66b2]" name="loginTC" class="Test.LoginTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Test" duration-ms="26993" started-at="2020-04-10T19:25:22Z" finished-at="2020-04-10T19:25:49Z">
+      <class name="Test.HomePageTest">
+        <test-method status="PASS" signature="loginTC()[pri:0, instance:Test.HomePageTest@48140564]" name="loginTC" duration-ms="13039" started-at="2020-04-10T14:25:36Z" finished-at="2020-04-10T14:25:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTC -->
+      </class> <!-- Test.HomePageTest -->
+      <class name="Test.LoginTest">
+        <test-method status="PASS" signature="loginTC()[pri:0, instance:Test.LoginTest@2c8d66b2]" name="loginTC" duration-ms="13935" started-at="2020-04-10T14:25:22Z" finished-at="2020-04-10T14:25:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTC -->
+      </class> <!-- Test.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
