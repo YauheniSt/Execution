@@ -23,20 +23,20 @@ public class Base {
 	
 
 	public WebDriver browserInit() throws IOException {
-		/*String hubUrl="http://10.0.0.2:4444/wd/hub";
+		String hubUrl="http://10.0.0.2:4444/wd/hub";
 		DesiredCapabilities cp=new DesiredCapabilities();
-		cp.setBrowserName("firefox");
+		cp.setBrowserName("chrome");
 		cp.setPlatform(Platform.WINDOWS);	
 			
 		driver=new RemoteWebDriver(new URL(hubUrl),cp);
 		
-		*/
+		
 		prop = new Properties();
 		config = new Config();
 		file = new FileInputStream(config.getConfigDir());
 		prop.load(file);
 
-		if (prop.get("browser").equals("chrome")) {
+		/*if (prop.get("browser").equals("chrome")) {
 			System.setProperty(prop.getProperty("chromeDriver"), prop.getProperty("chromeDriverDir"));
 			driver = new ChromeDriver();
 		} else if (prop.get("browser").equals("firefox")) {
@@ -47,7 +47,7 @@ public class Base {
 			System.setProperty(prop.getProperty("ieDriver"), prop.getProperty("ieDriverDir"));
 			driver = new InternetExplorerDriver();
 		}	
-	
+	*/
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait( 3, TimeUnit.SECONDS);
